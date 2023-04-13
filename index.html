@@ -10,115 +10,192 @@
                 margin: 0;
             }
 
-            .container {
-                position: relative;
-            }
-
-            .box {
+            nav {
                 background-color: aqua;
-                width: 100%;
-                padding: 10px;
-                margin: 0;
                 text-align: center;
+                align-items: center;
+                justify-content: center;
+                height: 60px;
             }
 
-            .image {
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                height: 30px;
+                display: inline-block;
+                margin-top: 20px;
+            }
+
+            li {
+                display: inline-block;
+                margin: 0 10px;
+            }
+
+            li:not(:last-child) {
+                vertical-align: middle;
+                border-right: 1px solid black;
+                padding-right: 20px;
+            }
+
+            li:hover {
+                color: crimson;
+                cursor: pointer;
+                font-weight: bolder;
+            }
+            
+            header img {
                 width: 100%;
                 height: 80%;
 			    object-fit: cover;
 			    object-position: center 10%;
             }
 
-            p {
-                font-size: 30px;
-            }
-
-            .container2 {
+            Main {
 			display: flex;
 			flex-direction: row;
-		}
+		    }
 
-		.left {
+		    .left {
 			flex: 1;
-			padding: 20px;
-		}
+            margin-left: 50px;
+            margin-top: 50px;
+            width: 50%;
+            height: 400px;
+		    }
 
-		.right {
-			display: flex;
-			flex-direction: row;
-			flex: 1;
-			padding: 20px;
-		}
-
-		.title {
+            #title {
 			font-size: 35px;
 			font-weight: bold;
 			margin-bottom: 10px;
             font-weight: bold;
-		}
+		    }
 
-		.paragraph {
+		    .paragraph {
 			margin-bottom: 10px;
             margin-top: 10px;
             font-size: 20px;
-		}
+		    }
 
-        .square {
-			width: 200px;
-			height: 200px;
-			background-color: #ccc;
-			margin-bottom: 10px;
-			margin-right: 10px;
-			box-sizing: border-box;
-			padding: 10px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
+		    .right {
+            flex: 1;
+            width: 50%;
+            position: relative;
+            height: 400px;
+            display: flex;
+            margin-left: 100px;
+            align-items: center;
+            justify-content: center;
+		    }
 
-        .row {
-			display: flex;
-			flex-direction: column;
-		}
+            #rightleft {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+            }
 
-		.row:last-child .square {
-			margin-bottom: 0;
-        }
-		.square:nth-child(3n) {
-			margin-right: 0;
-		}
+            #rightright {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            }
 
-        .box2 {
-            background-color: aqua;
-            width: 100%;
-            margin: 0;
-        }
+            .image-box {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            top: 0;
+            left: 0;
+            margin-top: 15px;
+            margin-left: 20px;
+            }
+
+            .image-box img {
+                height: 200px;
+                width: 200px;
+            }
+
+            .image-box p {
+                scale: 142%;
+                width: 135px;
+                border: 3px solid aqua;
+                margin: 0px;
+                margin-left: 29px;
+                background-color: aqua;
+            }
+
+            .image-box img, .image-box p {
+                display: inline-block;
+            }
+
+            footer {
+                background-color: aqua;
+                height: 60px;
+                margin-top: 300px;
+}
+
 
         </Style>
 </head>
 <body>
-    <div class="container">
-    <div class="box">
-        <p>About Us | Service | Our Values | State of the Industry | Places We Work | Testimonials | Contact Us</p>
-      </div>
-    <img src="https://img.elo7.com.br/product/zoom/34A8A81/caneca-graphic-design-is-my-passion-cachorro.jpg" class="image" alt="Graphic design is my passion">
-</div>
-<div class="container2">
+    <nav>
+        <ul>
+            <li>About Us</q></li>
+            <li>Services</li>
+            <li>Our Values</li>
+            <li>State of the Industry</li>
+            <li>Places We Work</li>
+            <li>Testimonials</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+    <header>
+        <img src="https://img.elo7.com.br/product/zoom/34A8A81/caneca-graphic-design-is-my-passion-cachorro.jpg" class="image" alt="Graphic design is my passion">
+    </header>
+<main>
     <div class="left">
-        <div class="title">OUR FOUNDER, A TRUE LEADER, ALANAH RODRIGUEZ</div>
-        <div class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem nihil consectetur molestiae reprehenderit architecto similique assumenda, voluptatum a neque dolorem qui ullam id est eligendi molestias numquam ducimus modi. Namoral eu to surtando eu n durmo bem fazem meses eu to tendo crise de soluço fazem uns 2 dias e eu não faço ideia doq há de errado cmg</div>
+        <div id="title">OUR FOUNDER, A TRUE LEADER, ALANAH RODRIGUEZ</div>
+        <div class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem nihil consectetur molestiae reprehenderit architecto similique assumenda, voluptatum a neque dolorem qui ullam id est eligendi molestias numquam ducimus modi. Ok, eu to me sentindo melhor agora. Não só as crises de soluço passaram mas eu me desestressei. Ando meio inquieto, tho, como se eu não estivesse dormindo direito</div>
+        <div class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, necessitatibus, sunt excepturi expedita eveniet assumenda sit a quas labore pariatur corporis temporibus quia! Provident quos totam fugiat aliquam dignissimos ducimus!</div>
+        <div class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, necessitatibus, sunt excepturi expedita eveniet assumenda sit a quas labore pariatur corporis temporibus quia! Provident quos totam fugiat aliquam dignissimos ducimus! Entendo que o site ta horrorosamente feio mas eu to bem orgulhoso, fiquei minha tarde fazendo isso</div>
+        <div class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, necessitatibus, sunt excepturi expedita eveniet assumenda sit a quas labore pariatur corporis temporibus quia! Provident quos totam fugiat aliquam dignissimos ducimus!</div>
         <div class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, necessitatibus, sunt excepturi expedita eveniet assumenda sit a quas labore pariatur corporis temporibus quia! Provident quos totam fugiat aliquam dignissimos ducimus!</div>
     </div>
     <div class="right">
-        <div class="square">Square 1</div>
-        <div class="square">Square 2</div>
-        <div class="square">Square 3</div>
-        <div class="square">Square 4</div>
-        <div class="square">Square 5</div>
-        <div class="square">Square 6</div>
+        <div id="rightleft">
+            <div class="image-box">
+                <img src="https://img.freepik.com/vetores-premium/emblemas-de-suv-para-veiculos-automotivos-4x4-de-aventura-off-road_73149-57.jpg" alt="What's wrong?">
+                <p>Biography</p>
+            </div>
+            <div class="image-box">
+                <img src="https://img.freepik.com/vetores-premium/emblemas-de-suv-para-veiculos-automotivos-4x4-de-aventura-off-road_73149-57.jpg" alt="What's wrong?">
+                <p>Our Founder</p>
+            </div>
+            <div class="image-box">
+                <img src="https://img.freepik.com/vetores-premium/emblemas-de-suv-para-veiculos-automotivos-4x4-de-aventura-off-road_73149-57.jpg" alt="What's wrong?">
+                <p>Forms</p>
+            </div>
+        </div>
+        <div id="rightright">
+            <div class="image-box">
+                <img src="https://img.freepik.com/vetores-premium/emblemas-de-suv-para-veiculos-automotivos-4x4-de-aventura-off-road_73149-57.jpg" alt="What's wrong?">
+                <p>Our Office</p>
+            </div>
+            <div class="image-box">
+                <img src="https://img.freepik.com/vetores-premium/emblemas-de-suv-para-veiculos-automotivos-4x4-de-aventura-off-road_73149-57.jpg" alt="What's wrong?">
+                <p>Referrals</p>
+            </div>
+            <div class="image-box">
+                <img src="https://img.freepik.com/vetores-premium/emblemas-de-suv-para-veiculos-automotivos-4x4-de-aventura-off-road_73149-57.jpg" alt="What's wrong?">
+                <p>History</p>
+            </div>
     </div>
-</div>
-<div class="box2">
-  </div>
+    </div>
+        </div>
+    </div>
+</main>
+<footer></footer>
 </body>
 </html>
